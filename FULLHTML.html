@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <!-- This is just a start of HTML -->
+    <h1>HTML</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quod maxime iure quis consequuntur aut nam beatae at,<strong>This is strong</strong> nulla quae accusantium veniam deserunt fugiat suscipit unde itaque voluptatum cupiditate minima illo ratione rerum ex porro dolores. Numquam explicabo aperiam quidem dolorum, <em>This is emphasized</em> tenetur iste mollitia ratione consequuntur, sunt iusto est dolor. Ducimus, pariatur blanditiis voluptatum repellendus corporis, quisquam dicta quasi sed dolorum ab inventore animi quia. <b>This is bold</b> Nostrum magnam hic tenetur voluptas alias fugit assumenda exercitationem quas? Odit eligendi nihil asperiores ipsa iusto consequuntur aliquam autem dignissimos repellat, voluptate incidunt <i>This is italic</i> perspiciatis possimus animi, tempora minima cum voluptatum eius at eaque. Aperiam.</p><hr style="border: 2px solid black ;">
+    <h3>Anchor tags</h3>
+    <a href="http://whatsapp.com" target="_blank">Whatsapp</a><br>                                                             
+    <a href="facebook.com" target="_blank">Facebook</a><br><a href="linkedin.com" target="_blank">Linkedin</a><br><a href="google.com" target="_blank">Google</a><br>
+    <h3>Image</h3>
+    <img src="https://www.dreamstime.com/photos-images/heart.html" alt="Dreamstime"><hr>
+    <h2>Unordered List</h2>
+    <ul type="circle">
+        <li>My name is Saket Singh</li>
+        <ul type="square">
+            <li>My home name is Monu</li>
+        </ul>
+        <li>Pursuing Btech. Cse</li>
+    </ul>
+    <hr style="border: 2px solid black ;">
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>My name is Saket Singh</li>
+        <ol type="i">
+            <li>My home name is Monu</li>
+        </ol>
+        <li>Pursuing Btech. Cse</li>
+    </ol>
+    <hr style="border: 2px solid black ;">
+    <h2>Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Percenatge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saket</td>
+                <td>Maths</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Param</td>
+                <td>Science</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Sagar</td>
+                <td>English</td>
+                <td>80%</td>
+            </tr>
+        </tbody>
+    </table><hr style="border: 2px solid black ;">
+    <h2>Forms Using Input Tags</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <label for="mail">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="mail">
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <label for="eligibility">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligibility">
+        </div>
+        <br>
+        <label for="male">Male</label>
+        <label for="female">Female</label>
+        <label for="other">Other</label>
+        <div>
+            <input type="radio" name="mygender" id="male"><input type="radio" name="mygender" id="female"><input type="radio" name="mygender" id="other">
+        </div>
+        <br>
+        <label for="yourself"> Write about yourself</label>
+        <div>
+            <br>
+            <textarea name="myText" cols="30" rows="10" id="yourself"></textarea >
+        </div>
+        <br>
+        <label for="trust">Do you trust our company?</label>
+        <div>
+            <input type="checkbox" name="myEligibility"checked id="trust">
+        </div>
+        <br>
+        <div>
+           <label for="car">Car</label>
+           <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf">Swift</option>
+            <option value="swfd" selected>Swift Desire</option>
+           </select>
+        <div><br>
+           <input type="submit" value="Submit">
+           <input type="reset" value="ResetNow">
+        </div> 
+    </form>
+    <hr style="border: 2px solid black ;">
+    <h2 style="border: 2px solid yellow">Inline and Block Elements</h2>
+    <p style="border: 2px solid rebeccapurple ;">My name is Saket Singh</p><p style="border: 2px solid royalblue ;">My friend name is Sagar</p>
+    <span style="border: 2px solid black ;">Saket</span><span style="border: 2px solid grey ;">Sagar</span>
+    <hr style="border: 2px solid black ;">
+    <h2>Ids and Classes</h2>
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- Select and press ctrl + / to comment -->
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    <span class="redBg"></span>
+    <span id="mainSpan"></span>
+    <div class="redBg blackBorder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+    <hr style="border: 2px solid black">
+    <h2>HTML Entities</h2>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="container">
+        <p>This is another &nbsp; paragraph with two spaces</p>
+        <p>Paragraph is written like this &lt;p&gt; </p>
+        <p>Pound is written like this &pound; </p>
+        <p>Copyright is written like this &copy; </p>
+        <p>Another character is  &rAarr; </p>
+        <p>Another character is  &frac14; </p>
+        <p>Empty character is written like this &#8203;</p>
+    </div>
+    <hr style="border: solid 2px black;">
+    <h2>Semantic Elements</h2>
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?
+        </summary>
+        Keyboard
+    </details>
+    <hr style="border: solid 2px black;">
+</body>
+</html>
